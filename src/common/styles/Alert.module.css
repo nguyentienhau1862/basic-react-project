@@ -1,0 +1,37 @@
+.alert {
+	position: relative;
+	border-radius: 50vh;
+	padding: 8px 20px;
+	transition: 1s linear;
+	display: block;
+	--text-color: black;
+}
+
+.alertSuccess {
+	background-color: rgb(0, 220, 0);
+	--text-color: white;
+}
+
+.alertWarning {
+	background-color: yellow;
+}
+
+.alertError {
+	background-color: red;
+}
+
+.alertMessage {
+	display: inline-block;
+	color: var(--text-color);
+	margin-right: 8px;
+	font-weight: bold;
+}
+
+.alertIcon {
+	--icon-size: 28px;
+	height: var(--icon-size);
+	width: var(--icon-size);
+	vertical-align: middle;
+	display: inline-block;
+	stroke: var(--text-color);
+}
